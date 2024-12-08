@@ -1,3 +1,4 @@
+import Navbar from "./components/navbar";
 import "./globals.css";
 import { AuthProvider } from "./providers/provider";
 
@@ -10,7 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`antialiased`}>
-        <AuthProvider>{children}</AuthProvider>
+        <AuthProvider>
+          <Navbar></Navbar>
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );

@@ -24,7 +24,7 @@ export default function Signup() {
     }
   };
   return (
-    <div className="w-screen flex justify-center items-center h-screen">
+    <div className="w-full flex justify-center items-center h-screen">
       <div className="w-1/2 flex flex-col">
         <h1 className="text-3xl text-center uppercase font-bold">Signup</h1>
         <div className="flex justify-center">
