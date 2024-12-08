@@ -172,7 +172,7 @@ export default function Page() {
             </select>
           </div>
         </div>
-        <div className="flex flex-col p-2">
+        <div className="flex flex-col p-1">
           Status:
           <div className="grid grid-cols-7">
             {[0, 1, 2, 3, 4, 5, 6].map((run, index) => (
@@ -200,7 +200,7 @@ export default function Page() {
             ))}
           </div>
         </div>
-        <div className="p-2">
+        <div className="p-1">
           Extras:
           <div className="grid grid-cols-4 ">
             {[
@@ -222,7 +222,7 @@ export default function Page() {
             ))}
           </div>
         </div>
-        <div className="p-2">
+        <div className="p-1">
           Extras:
           <div className="grid grid-cols-4 ">
             {["Wicket", "Misfield", "Review", "Overthrow"].map(
@@ -238,7 +238,7 @@ export default function Page() {
           </div>
         </div>
         <div className="flex flex-col ">
-          <div className="m-10">
+          <div className="m-5">
             <ol className="grid grid-cols-1 divide-x divide-gray-100 overflow-hidden rounded-lg border border-gray-100 text-sm text-white sm:grid-cols-3">
               <li className="flex items-center justify-center gap-2 p-4 bg-slate-700">
                 <div className="leading-none text-center">
