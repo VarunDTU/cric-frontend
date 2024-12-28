@@ -31,3 +31,15 @@ export async function getMatch(matchId) {
     return { error: error.message };
   }
 }
+
+export async function getAllMatches() {
+  try {
+    const backendUrl = process.env.BACKEND_URL
+      ? process.env.BACKEND_URL
+      : "http://localhost:8000";
+    const res = await fetch(`${backendUrl}/match/all`);
+    return res.json();
+  } catch (error) {
+    return { error: error.message };
+  }
+}

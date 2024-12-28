@@ -4,12 +4,12 @@ import { useEffect, useState } from "react";
 import { getMatch } from "../events/serverActions";
 import CommentaryBox from "./commentary";
 
-export function ScoreCard() {
+export function ScoreCard({ matchId }) {
   const [isConnected, setIsConnected] = useState(socket.connected);
   const [fooEvents, setFooEvents] = useState();
   useEffect(() => {
     const getData = async () => {
-      const res = await getMatch(1);
+      const res = await getMatch(matchId);
       setFooEvents(res);
     };
     getData();
